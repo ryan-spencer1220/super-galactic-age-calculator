@@ -5,5 +5,7 @@ export default class UserAge {
   mercuryCalculator() {
     return Math.floor(this.age / 0.24);
   }
-  venusCalculator() {}
+  venusCalculator() {
+    return Math.floor(this.age / 0.62);
+  }
 }
