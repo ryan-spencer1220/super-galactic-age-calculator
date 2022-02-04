@@ -32,7 +32,7 @@ export default class UserAge {
     }
   }
 
-  //   venusExpectancy() {}
+  venusExpectancy() {}
 
   //   marsExpectancy() {}
 
