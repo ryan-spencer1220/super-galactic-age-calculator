@@ -58,7 +58,18 @@ export default class UserAge {
     }
   }
 
-  jupiterExpectancy() {}
+  jupiterExpectancy() {
+    let jupiterYearsRemaining = Math.floor(
+      this.lifeExpectancy / 11.86 - this.age / 11.86
+    );
+    if (jupiterYearsRemaining >= 0) {
+      return jupiterYearsRemaining;
+    } else {
+      return `You've lived ${Math.abs(
+        jupiterYearsRemaining
+      )} years over the entered life expectancy!`;
+    }
+  }
   //
   //   lifeExpectancyCalculator() {
   //     let mercuryExpectancy = Math.abs(
