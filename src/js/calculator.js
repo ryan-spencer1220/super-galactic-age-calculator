@@ -45,7 +45,18 @@ export default class UserAge {
     }
   }
 
-  marsExpectancy() {}
+  marsExpectancy() {
+    let marsYearsRemaining = Math.floor(
+      this.lifeExpectancy / 1.88 - this.age / 1.88
+    );
+    if (marsYearsRemaining >= 0) {
+      return marsYearsRemaining;
+    } else {
+      return `You've lived ${Math.abs(
+        marsYearsRemaining
+      )} years over the entered life expectancy!`;
+    }
+  }
 
   //   jupiterExpectancy() {}
   //
