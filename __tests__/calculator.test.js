@@ -52,7 +52,14 @@ describe("UserAge", () => {
       "You've lived 1 years over the entered life expectancy!"
     );
   });
-  //   it("should return the remaining years a user has left on Jupiter", () => {
-  //     expect(user.jupiterExpectancy()).toEqual(3);
-  //   });
+  it("should return the remaining years a user has left on Jupiter", () => {
+    expect(user.jupiterExpectancy()).toEqual(3);
+  });
+  it("should return the remaining years a user has left on Jupiter", () => {
+    user.age = 78;
+    user.lifeExpectancy = 77;
+    expect(user.jupiterExpectancy()).toEqual(
+      "You've lived 1 years over the entered life expectancy!"
+    );
+  });
 });

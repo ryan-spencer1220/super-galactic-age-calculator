@@ -58,7 +58,7 @@ export default class UserAge {
     }
   }
 
-  //   jupiterExpectancy() {}
+  jupiterExpectancy() {}
   //
   //   lifeExpectancyCalculator() {
   //     let mercuryExpectancy = Math.abs(
