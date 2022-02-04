@@ -12,4 +12,7 @@ describe("UserAge", () => {
   it("should return the age of the user in Mercury years", () => {
     expect(user.mercuryCalculator()).toEqual(125);
   });
+  it("should return the age of the user in Venus years", () => {
+    expect(user.venusCalculator()).toEqual(48);
+  });
 });

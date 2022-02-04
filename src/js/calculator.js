@@ -3,6 +3,7 @@ export default class UserAge {
     this.age = age;
   }
   mercuryCalculator() {
-    return this.age / 0.24;
+    return Math.floor(this.age / 0.24);
   }
+  venusCalculator() {}
 }
