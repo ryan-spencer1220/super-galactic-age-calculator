@@ -32,7 +32,18 @@ export default class UserAge {
     }
   }
 
-  venusExpectancy() {}
+  venusExpectancy() {
+    let venusYearsRemaining = Math.floor(
+      this.lifeExpectancy / 0.62 - this.age / 0.62
+    );
+    if (venusYearsRemaining >= 0) {
+      return venusYearsRemaining;
+    } else {
+      return `You've lived ${Math.abs(
+        venusYearsRemaining
+      )} years over the entered life expectancy!`;
+    }
+  }
 
   //   marsExpectancy() {}
 
