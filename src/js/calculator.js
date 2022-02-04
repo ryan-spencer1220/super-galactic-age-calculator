@@ -8,5 +8,7 @@ export default class UserAge {
   venusCalculator() {
     return Math.floor(this.age / 0.62);
   }
-  marsCalculator() {}
+  marsCalculator() {
+    return Math.floor(this.age / 1.88);
+  }
 }
