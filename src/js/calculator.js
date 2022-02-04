@@ -2,5 +2,7 @@ export default class UserAge {
   constructor(age) {
     this.age = age;
   }
-  mercuryCalculator() {}
+  mercuryCalculator() {
+    return this.age / 0.24;
+  }
 }
