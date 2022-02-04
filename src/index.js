@@ -14,11 +14,12 @@ $(document).ready(function () {
     const venusAge = userAge.venusCalculator();
     const marsAge = userAge.marsCalculator();
     const jupiterAge = userAge.jupiterCalculator();
-    const lifeExpectancyArrayByPlanet = lifeExpectancyCalculator();
+    // const lifeExpectancyArrayByPlanet = lifeExpectancyCalculator();
+    $("#age-entered").text(inputAge);
     $("#mercury-age").text(mercuryAge);
     $("#venus-age").text(venusAge);
     $("#mars-age").text(marsAge);
     $("#jupiter-age").text(jupiterAge);
-    $("#life-expectancy-array").text(lifeExpectancyArrayByPlanet);
+    // $("#life-expectancy-array").text(lifeExpectancyArrayByPlanet);
   });
 });

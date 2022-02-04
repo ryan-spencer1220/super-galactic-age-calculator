@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Galactic Age Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Super Galactic Age Calculator</h1>
+      </div>
+      <form id="new-form">
+        <label
+          ><h5>Enter your age!</h5>
+          <input id="age-entered" class="form-control" type="number"
+        /></label>
+        <br />
+        <label
+          ><h5>Enter your life expectancy!</h5>
+          <input id="expectancy-entered" class="form-control" type="number"
+        /></label>
+        <br />
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div class="results">
+        <br />
+        <h4>
+          The following is your current Earth age on various planets throughout
+          the solar system!
+        </h4>
+        <br />
+        <h5>Earth: <span id="age-entered"></span></h5>
+        <br />
+        <h5>Mercury: <span id="mercury-age"></span></h5>
+        <br />
+        <h5>Venus: <span id="venus-age"></span></h5>
+        <br />
+        <h5>Mars: <span id="mars-age"></span></h5>
+        <br />
+        <h5>Jupiter: <span id="jupiter-age"></span></h5>
+      </div>
+    </div>
+  </body>
+</html>
