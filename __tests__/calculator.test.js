@@ -9,4 +9,7 @@ describe("UserAge", () => {
   it("should create a new UserAge object", () => {
     expect(user.age).toEqual(30);
   });
+  it("should return the age of the user in Mercury years", () => {
+    expect(user.mercuryCalculator()).toEqual(125);
+  });
 });
