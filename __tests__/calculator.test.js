@@ -23,6 +23,6 @@ describe("UserAge", () => {
     expect(user.jupiterCalculator()).toEqual(2);
   });
   it("should return the remaining years a user has left on each planet based on user inputted life expectancy", () => {
-    expect(user.lifeExpectancyCalculator()).toEqual(2);
+    expect(user.lifeExpectancyCalculator()).toEqual([195, 75, 25, 3]);
   });
 });
