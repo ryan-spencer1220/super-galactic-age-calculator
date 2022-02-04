@@ -22,7 +22,16 @@ describe("UserAge", () => {
   it("should return the age of the user in Jupiter years", () => {
     expect(user.jupiterCalculator()).toEqual(2);
   });
-  it("should return the remaining years a user has left on each planet based on user inputted life expectancy", () => {
-    expect(user.lifeExpectancyCalculator()).toEqual([195, 75, 25, 3]);
+  it("should return the remaining years a user has left on Mercury", () => {
+    expect(user.mercuryExpectancy()).toEqual(195);
   });
+  //   it("should return the remaining years a user has left on Venus", () => {
+  //     expect(user.venusExpectancy()).toEqual(75);
+  //   });
+  //   it("should return the remaining years a user has left on Mars", () => {
+  //     expect(user.marsExpectancy()).toEqual(25);
+  //   });
+  //   it("should return the remaining years a user has left on Jupiter", () => {
+  //     expect(user.jupiterExpectancy()).toEqual(3);
+  //   });
 });
