@@ -33,7 +33,7 @@ describe("UserAge", () => {
     );
   });
   it("should return the remaining years a user has left on Earth", () => {
-    expect(user.earthExpectancy()).toEqual(30);
+    expect(user.earthExpectancy()).toEqual(47);
   });
   it("should return the remaining years a user has left on Earth", () => {
     user.age = 78;

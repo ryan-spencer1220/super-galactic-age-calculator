@@ -19,7 +19,16 @@ export default class UserAge {
     return Math.floor(this.age / 11.86);
   }
 
-  earthExpectancy() {}
+  earthExpectancy() {
+    let earthYearsRemaining = this.lifeExpectancy - this.age;
+    if (earthYearsRemaining >= 0) {
+      return earthYearsRemaining;
+    } else {
+      return `You've lived ${Math.abs(
+        earthYearsRemaining
+      )} years over the entered life expectancy!`;
+    }
+  }
 
   mercuryExpectancy() {
     let mercuryYearsRemaining = Math.floor(

@@ -14,7 +14,7 @@ $(document).ready(function () {
     const venusAge = userAge.venusCalculator();
     const marsAge = userAge.marsCalculator();
     const jupiterAge = userAge.jupiterCalculator();
-    const earthExpectancy = Math.abs(inputExpectancy - inputAge);
+    const earthExpectancy = userAge.earthExpectancy();
     const mercuryLifeExpectancy = userAge.mercuryExpectancy();
     const venusLifeExpectancy = userAge.venusExpectancy();
     const marsLifeExpectancy = userAge.marsExpectancy();
