@@ -19,7 +19,18 @@ export default class UserAge {
     return Math.floor(this.age / 11.86);
   }
 
-  mercuryExpectancy() {}
+  mercuryExpectancy() {
+    let mercuryYearsRemaining = Math.floor(
+      this.lifeExpectancy / 0.24 - this.age / 0.24
+    );
+    if (mercuryYearsRemaining >= 0) {
+      return mercuryYearsRemaining;
+    } else {
+      return `You've lived ${Math.abs(
+        mercuryYearsRemaining
+      )} years over the entered life expectancy!`;
+    }
+  }
 
   //   venusExpectancy() {}
 
