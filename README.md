@@ -30,10 +30,6 @@
 - _Run "npm run build"_
 - _Navigate to the dist directory and launch index.html_
 
-_OR_
-
-- _Navigate Here: https://ryan-spencer1220.github.io/super-galactic-age-calculator_
-
 ## Known Bugs
 
 - _No Known Bugs_
